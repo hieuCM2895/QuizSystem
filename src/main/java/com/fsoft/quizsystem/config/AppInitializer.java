@@ -1,12 +1,7 @@
 
-package com.assignment.long1.config;
+package com.fsoft.quizsystem.config;
 
-import org.jetbrains.annotations.NotNull;
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
-import javax.servlet.ServletRegistration;
 
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
@@ -14,8 +9,8 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
     protected Class<?>[] getRootConfigClasses() {
         // TODO Auto-generated method stub
         return new Class[] {
-                PersistenceJpaConfig.class,
-                WebSecurityConfig.class
+//                PersistenceJpaConfig.class,
+//                WebSecurityConfig.class
         };
     }
 

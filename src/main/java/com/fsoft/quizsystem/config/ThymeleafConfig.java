@@ -1,4 +1,4 @@
-package com.assignment.long1.config;
+package com.fsoft.quizsystem.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -8,7 +8,7 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @Configuration
-@ComponentScan("com.assignment.long1")
+@ComponentScan("com.fsoft.quizsystem.controller")
 public class ThymeleafConfig {
 
     @Bean
