@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.20.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<div th:replace="fragments/_Header"></div>
+
+<!-- Form Login -->
+<div class="bg-white flex">
+    <div class="flex-col flex ml-auto mr-auto items-center lg:w-2/3 md:w-3/5">
+        <h1 class="font-bold text-2xl my-4 text-white"> Login </h1>
+        <form action="" class="mt-2 flex flex-col lg:w-1/2 w-8/12">
+
+            <div>
+                <h1 class="text-3xl justify-left border-b-2 pb-6 flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10">
+                    Login to your account !</h1>
+            </div>
+
+            <div
+                    class="flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10 border border-b-2">
+                <div class="flex -mr-px justify-center w-15 p-4">
+                        <span
+                                class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
+                                <img alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" style="margin-bottom:3px; margin-right:0px"
+                                     width="30px"/>
+
+                        </span>
+                </div>
+                <div class="flex -mr-px justify-center w-15 pt-4 pb-4 text-2xl font-semibold">Continue with Google</div>
+            </div>
+
+            <div
+                    class="flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10 border border-b-2">
+                <div class="flex -mr-px justify-center w-15 p-4">
+                        <span
+                                class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
+                            <i class="far fa-envelope"></i>
+                        </span>
+                </div>
+                <input class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
+                       placeholder="Email"
+                       type="text"/>
+            </div>
+
+            <div class="flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10 border  border-b-2">
+                <div class="flex -mr-px justify-center w-15 p-4">
+                        <span
+                                class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                </div>
+                <input class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
+                       placeholder="Password"
+                       type="text"/>
+            </div>
+
+            <div
+                    class="flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded pr-10">
+                <div class="flex -mr-px justify-center w-15 p-4">
+                    <input style="width: 30px; height: 30px;" type="checkbox">
+                </div>
+                <span class="flex -mr-px justify-center w-15 p-4 text-2xl">Remember me</span>
+            </div>
+
+
+            <a class="bg-blue-400 py-4 text-center px-17 md:px-12 md:py-4 text-white rounded leading-tight text-xl md:text-base font-sans mt-4 mb-5
+                    hover:bg-blue-700 focus:outline-none duration-100 ease-in-out"
+               href="/">
+                Login
+            </a>
+
+            <div class="flex -mr-px justify-center w-15 text-2xl mb-3">Or <a class="pl-2"
+                                                                             style="text-decoration: underline; color: rgb(21, 167, 224); cursor: pointer;">Forgot
+                Password ?</a></div>
+            <div class="flex -mr-px justify-center w-15 text-2xl">Don't have an account ? <a class="pl-2"
+                                                                                             style="text-decoration: underline; color: rgb(21, 167, 224); cursor: pointer;">Sign
+                in</a></div>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<div th:replace="fragments/_Footer"></div>
+</body>
+</html>

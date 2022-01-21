@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.20.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<div th:replace="fragments/_Header"></div>
+<div class="bg-white flex">
+    <div class="flex-col flex ml-auto mr-auto items-center lg:w-2/3 md:w-3/5">
+        <h1 class="font-bold text-2xl my-4 text-white"> Register </h1>
+        <form action="" class="mt-2 flex flex-col lg:w-1/2 w-8/12">
+
+            <div>
+                <h1
+                        class="text-4xl justify-left border-b-2 pb-6 flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10">
+                    Sign Up And Start !</h1>
+            </div>
+
+            <div
+                    class="flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10 border border-b-2">
+                <div class="flex -mr-px justify-center w-15 p-4">
+                        <span
+                                class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
+                            <i class="far fa-user"></i>
+                        </span>
+                </div>
+                <input type="text"
+                       class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
+                       placeholder="Full Name" />
+            </div>
+
+            <div
+                    class="flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10 border border-b-2">
+                <div class="flex -mr-px justify-center w-15 p-4">
+                        <span
+                                class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
+                            <i class="far fa-envelope"></i>
+                        </span>
+                </div>
+                <input type="text"
+                       class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
+                       placeholder="Email" />
+            </div>
+
+            <div
+                    class="flex flex-wrap items-stretch w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10 border  border-b-2">
+                <div class="flex -mr-px justify-center w-15 p-4">
+                        <span
+                                class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                </div>
+                <input type="text"
+                       class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
+                       placeholder="Password" />
+            </div>
+
+            <div class="flex flex-wrap items-stretch w-full relative h-15 bg-white items-center rounded pr-10">
+                <div class="flex -mr-px justify-center items-center p-4 w-full">
+                    <input type="checkbox" style="width: 30px; height: 30px; ">
+                    <span class="flex -mr-px justify-center pl-5 text-md">Yes, I want to get the most out of Brand by receiving emails
+                                                with quiz results!</span>
+
+                </div>
+            </div>
+
+
+            <a href="/" class="bg-blue-400 py-4 text-center px-17 md:px-12 md:py-4 text-white rounded leading-tight text-xl md:text-base font-sans mt-4 mb-5
+                    hover:bg-blue-700 focus:outline-none duration-100 ease-in-out">
+                SIGN UP
+            </a>
+
+            <div class="flex -mr-px justify-center w-15 text-xl">Already have an account ? <a class="pl-2"
+                                                                                              style="text-decoration: underline; color: rgb(21, 167, 224); cursor: pointer;">Login</a></div>
+        </form>
+    </div>
+</div>
+<!-- Footer -->
+<div th:replace="fragments/_Footer"></div>
+</body>
+</html>
