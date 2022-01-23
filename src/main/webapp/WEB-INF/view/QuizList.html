@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.20.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet"
+          href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/resources/css/quiz-list.css}">
+</head>
+
+<body>
+<!-- Header -->
+<div th:replace="fragments/_Header"></div>
+
+<!-- Main Content -->
+<div class="container course-list">
+    <div class="row">
+        <div th:each="i: ${#numbers.sequence(0, 3)}" class="col-6 col-sm-4 col-lg-3">
+            <div class="course shadow-sm">
+                <img src="http://127.0.0.1:5500/resources/images/subjects/bootcamp.png" alt="">
+                <p>The Web Developer Bootcamp 20</p>
+                <a href="#">SEE DETAILS</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <button class="btn btn-more">More</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<div th:replace="fragments/_Footer"></div>
+</body>
+
+</html>

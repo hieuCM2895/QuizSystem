@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.20.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet"
+          href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/resources/css/quiz-detail.css}">
+</head>
+
+<body>
+<!-- Header -->
+<div th:replace="fragments/_Header"></div>
+
+<!-- Main Content -->
+<div class="single-course">
+    <div class="row g-0">
+        <div class="col-md-6 col-lg-4 thumb">
+            <img src="http://127.0.0.1:5500/resources/images/subjects/bootcamp.png" alt="">
+        </div>
+        <div class="col-md-6 col-lg-8 info">
+            <nav class="flex" aria-label="breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="breadcrumb-item inline-flex items-center">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item inline-flex items-center">
+                        <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                  clip-rule="evenodd"></path>
+                        </svg>
+                        <a href="#">
+                            Development
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active inline-flex items-center" aria-current="page">
+                        <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                  clip-rule="evenodd"></path>
+                        </svg>
+                        The Web Developer Bootcamp 2021
+                    </li>
+                </ol>
+            </nav>
+            <h2>The Web Developer Bootcamp 2021</h2>
+            <p class="description">
+                COMPLETELY REDONE - The only course you need to learn web development - HTML,
+                CSS, JS, Node, and More!
+            </p>
+            <div class="controls">
+                <button class="btn btn-enroll">
+                    <i class="fas fa-bookmark me-2"></i>
+                    <span>Enroll</span>
+                </button>
+                <a class="btn btn-learn" href="#">
+                    <i class="fas fa-graduation-cap me-2"></i>
+                    <span>Learn</span>
+                </a>
+                <a class="btn btn-quiz" href="#">
+                    <i class="fas fa-gamepad me-2"></i>
+                    <span>Do Quiz</span>
+                </a>
+            </div>
+            <span class="last-update"><i class="fas fa-calendar-alt me-2"></i>Last Update: 23/11/2022</span>
+            <span class="language"><i class="fas fa-globe-americas me-2"></i>English</span>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div th:replace="fragments/_Footer"></div>
+</body>
+
+</html>
