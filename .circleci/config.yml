@@ -30,16 +30,16 @@ jobs:
   print_output_id:
     docker:
       - image: circleci/node:13.8.0
-    commands:
-      sayhello:
-        description: "A very simple command for demonstration purposes"
-        parameters:
-          to:
-            type: string
-            default: "Hello World"
-        steps:
-          - run: echo $CIRCLE_WORKFLOW_ID
-
+    steps:
+      - commands:
+          sayhello:
+            description: "A very simple command for demonstration purposes"
+            parameters:
+              to:
+                type: string
+                default: "Hello World"
+            steps:
+              - run: echo $CIRCLE_WORKFLOW_ID
   print_world:
     docker:
       - image: circleci/node:13.8.0
