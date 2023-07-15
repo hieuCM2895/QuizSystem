@@ -19,6 +19,8 @@ jobs:
   build:
     docker:
       - image: cimg/base:2020.01
+    environment:
+      MY_ENV_VAR: My pipeline id is << pipeline.id >> and my git branch is << pipeline.git.branch >>.
     steps:
       - checkout
       - run:
